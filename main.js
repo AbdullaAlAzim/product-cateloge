@@ -107,16 +107,35 @@ productListul.addEventListener('click', (e) =>{
 
   }
 });
+
+
 filterInput.addEventListener('keyup', e => {
 
     const text = e.target.value;
     document.querySelectorAll('.collection .collection-item').forEach(item => {
 
-       console.log(item.firstChild);
+       console.log(item.firstElementChild);
 
     });
 
 });
+
+//filter product
+// const filterProduct = e => {
+//     const text = e.target.value.toLowerCase();
+//     document.querySelectorAll('.collection .collection-item').forEach(item => {
+//       const productName = item.firstElementChild.textContent.toLowerCase();
+//       if (productName.indexOf(text) === -1) {
+//         // showMessage(null, true);
+//         showMessage('NO item Meet your criteria');
+//         item.style.display = 'none';
+//       } else {
+//         msg.innerHTML = '';
+//         item.style.display = 'block';
+//       }
+//     });
+//   };
+  
 
 
 
