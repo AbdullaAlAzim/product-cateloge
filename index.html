@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product Catalog</title>
+    <!-- CSS only -->
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-dark bg-dark d-flex fs-5">
+        <h1 class="navbar-brand m-auto">Product Catelog</h1>
+        <input
+          type="text"
+          name="filter"
+          id="filter"
+          placeholder="input your product"
+          class="form-control m-3 p-4"
+        />
+      </nav>
+
+      <div class="card card-body">
+        <ul class="list-group collection">
+          <!-- <li class="list-group-item collection-item" id="product-0">
+                    <strong>microphone</strong>
+                    <span class="price">$30</span>
+                  <i class="fas fa-trash-alt float-end delete-product"></i>
+                </li> -->
+
+          <!-- <li class="list-group-item collection-item">
+                    <strong>Laptop</strong>
+                    <span class="price">$600</span>
+                  <i class="fas fa-trash-alt float-end"></i>
+                </li>
+
+                <li class="list-group-item collection-item">
+                    <strong>Pendrive</strong>
+                    <span class="price">$5</span>
+                  <i class="fas fa-trash-alt float-end"></i>
+                </li>
+
+                <li class="list-group-item collection-item">
+                    <strong>Harddisk</strong>
+                    <span class="price">$30</span>
+                  <i class="fas fa-trash-alt float-end"></i>
+                </li>
+
+                <li class="list-group-item collection-item">
+                    <strong>Monitor</strong>
+                    <span class="price">$50</span>
+                  <i class="fas fa-trash-alt float-end"></i>
+                </li>
+
+                <li class="list-group-item collection-item">
+                    <strong>Monitor</strong>
+                    <span class="price">$300</span>
+                  <i class="fas fa-trash-alt float-end"></i>
+                </li> -->
+        </ul>
+
+        <span class="msg"></span>
+        <form>
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12 pt-3">
+              <input
+                type="text"
+                placeholder="Product-name"
+                class="form-control product-name"
+              />
+            </div>
+
+            <div class="col-lg-6 col-sm-6 col-12 pt-3">
+              <input
+                type="text"
+                placeholder="Product-price"
+                class="form-control product-price"
+              />
+            </div>
+          </div>
+          <button class="btn btn-large btn-success add-product mt-3 w-100">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
